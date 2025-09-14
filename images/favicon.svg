@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 512 512">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff200;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke-width: 0px;
+      }
+
+      .cls-5 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: red;
+      }
+
+      .cls-3 {
+        fill: lime;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g>
+    <rect class="cls-5" x="-.5" y=".5" width="512" height="512"/>
+    <line class="cls-5" x1="-.5" y1="427.2" x2="511.5" y2="427.2"/>
+    <line class="cls-5" x1="-.5" y1="341.8" x2="511.5" y2="341.8"/>
+    <line class="cls-5" x1="-.5" y1="256.5" x2="511.5" y2="256.5"/>
+    <line class="cls-5" x1="-.5" y1="171.2" x2="511.5" y2="171.2"/>
+    <line class="cls-5" x1="-.5" y1="85.8" x2="511.5" y2="85.8"/>
+    <line class="cls-5" x1="426.2" y1=".5" x2="426.2" y2="512.5"/>
+    <line class="cls-5" x1="340.8" y1=".5" x2="340.8" y2="512.5"/>
+    <line class="cls-5" x1="255.5" y1=".5" x2="255.5" y2="512.5"/>
+    <line class="cls-5" x1="170.2" y1=".5" x2="170.2" y2="512.5"/>
+    <line class="cls-5" x1="84.8" y1=".5" x2="84.8" y2="512.5"/>
+  </g>
+  <g id="bars">
+    <rect id="yellos" class="cls-1" x="-.5" y=".5" width="512" height="171"/>
+    <rect id="green" class="cls-3" y="171" width="511" height="171"/>
+    <rect id="red" class="cls-2" y="342" width="511" height="170"/>
+  </g>
+  <g id="Layer_3" data-name="Layer 3">
+    <polygon id="star" class="cls-4" points="241.5 65.8 282.3 191.3 414.3 191.3 307.5 269 348.3 394.5 241.5 316.9 134.7 394.5 175.5 269 68.7 191.3 200.7 191.3 241.5 65.8"/>
+  </g>
+</svg>
