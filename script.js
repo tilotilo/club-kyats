@@ -8,7 +8,10 @@ document.querySelector(".dollars").addEventListener("click", function () {
   let amount = document.getElementById("amount").value;
   let rate = document.getElementById("rate").value;
   if (amount === "") {return;}  // No input: do nothing
-  //convert function and math
+  if (rate === "") {  // No exchange rate: display error
+    displayMessage(`Enter an exchange rate to continue.`);
+    return;}
+  //convert functionnodno and math
   function convert(amount,rate) {
     return amount*rate;
   }
@@ -31,6 +34,9 @@ document.querySelector(".kyats").addEventListener("click", function () {
   let amount = document.getElementById("amount").value;
   let rate = document.getElementById("rate").value;
   if (amount === "") {return;}  // No input: do nothing
+  if (rate === "") {  // No exchange rate: display error
+    displayMessage(`Enter an exchange rate to continue.`);
+    return;}
   function convert(amount,rate) {
     return amount/rate;
   }
@@ -44,6 +50,9 @@ document.querySelector(".lakh").addEventListener("click", function () {
   let amount = document.getElementById("amount").value;
   let rate = document.getElementById("rate").value;
   if (amount === "") {return;}  // No input: do nothing
+  if (rate === "") {  // No exchange rate: display error
+    displayMessage(`Enter an exchange rate to continue.`);
+    return;}
   function convert(amount,rate) {
     return (amount * 100000) / rate;
   }
