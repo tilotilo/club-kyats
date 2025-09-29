@@ -8,8 +8,10 @@ document.querySelector(".dollars").addEventListener("click", function () {
   let amount = document.getElementById("amount").value;
   let rate = document.getElementById("rate").value;
   if (amount === "") {return;}  // No input: do nothing
-  //convert function and math
-  function convert(amount,rate) {
+  if (rate === "") {  // No exchange rate: display error
+    displayMessage(`Enter an exchange rate to continue.`);
+    return;}
+    function convert(amount,rate) {//convert dollars func mathing
     return amount*rate;
   }
   let result = convert(amount, rate);
@@ -31,7 +33,10 @@ document.querySelector(".kyats").addEventListener("click", function () {
   let amount = document.getElementById("amount").value;
   let rate = document.getElementById("rate").value;
   if (amount === "") {return;}  // No input: do nothing
-  function convert(amount,rate) {
+  if (rate === "") {  // No exchange rate: display error
+    displayMessage(`Enter an exchange rate to continue.`);
+    return;}
+  function convert(amount,rate) {//convert kyats func mathing
     return amount/rate;
   }
     // Format the kyat amount with commas
@@ -44,7 +49,10 @@ document.querySelector(".lakh").addEventListener("click", function () {
   let amount = document.getElementById("amount").value;
   let rate = document.getElementById("rate").value;
   if (amount === "") {return;}  // No input: do nothing
-  function convert(amount,rate) {
+  if (rate === "") {  // No exchange rate: display error
+    displayMessage(`Enter an exchange rate to continue.`);
+    return;}
+  function convert(amount,rate) {//convert func mathing
     return (amount * 100000) / rate;
   }
   // Format both amount and result with commas
